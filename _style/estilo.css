@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #cccccc;
+    width: 100%;
+    height: 100%;
+  }
+
+/*.containerGrid{
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 10vh 82vh 8vh;
+
+    grid-template-areas: "nav"
+                         "main"
+                         "footer";
+}
+
+.containerGrid > nav{
+    grid-area: nav;
+}
+.containerGrid > main{
+    grid-area: main;
+}
+.containerGrid > footer{
+    grid-area: footer;
+    align-items: center;
+}*/
