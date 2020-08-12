@@ -1,0 +1,24 @@
+{
+  "name": "projetopw2-leonardots",
+  "version": "1.0.0",
+  "description": "Desenvolvimento do projeto e atividades sugeridas na disciplina de Programação Web 2.",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeonardoTS-ETEC-Barueri/ProjetoPW2-LeonardoTS.git"
+  },
+  "author": "Leonardo T. S.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeonardoTS-ETEC-Barueri/ProjetoPW2-LeonardoTS/issues"
+  },
+  "homepage": "https://github.com/LeonardoTS-ETEC-Barueri/ProjetoPW2-LeonardoTS#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
