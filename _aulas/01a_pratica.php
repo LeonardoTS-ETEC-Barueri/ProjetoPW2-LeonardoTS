@@ -5,10 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 
-        <title>Projeto Programação Web 2</title>
+        <title>Aula 01 - Introdução ao PHP</title>
 
-        <link type="text/css" rel="stylesheet" href="_style/bootstrap.css"/>
-        <link type="text/css" rel="stylesheet" href="_style/estilo.css"/>
+        <link type="text/css" rel="stylesheet" href="../_style/bootstrap.css"/>
+        <link type="text/css" rel="stylesheet" href="../_style/estilo.css"/>
     </head>
     <body>
         <div class="container-fluid d-flex h-100 flex-column">
@@ -18,19 +18,29 @@
             </nav>
 
             <main class="row flex-grow-1">
+
                 <div class="col bg-light">
-                    <h1>Olá mundo!</h1>
-                    <br/>
-                    <p>Sou o início de um projeto bacana para adquirir conhecimentos sobre PHP!</p>
-                    <p>• <a href="_aulas/01_aulaIntroPHP.php">Aula 01 - Introdução ao PHP</a></p>
-                    <p>• <a href="_aulas/01a_pratica.php">Aula 01a - Prática das Lógicas de Programação em PHP</a></p>
-                </div>
-                <div class="col bg-2">
-                    <?php
-                    echo "<h1>Olá, sou um título feito com PHP</h1>".
-                    "<br>".
-                    "<p> Sou um parágrafo escrito com PHP! </p>";
+                    <h1>Prática das Lógicas de Programação em PHP</h1>
+                    <h2>Data: 2020.08.18</h2>
+                    <hr/>
+                    
+                    <?php 
+                        echo "<h1>Tabuada do 10</h1>";
+
+                        echo "<table>";
+                        $num = 10;
+                        for ($mult = 0; $mult < 11; $mult++){
+                            $res = $num * $mult;
+                            echo "<tr style='border-style: double;'><td>";
+                            echo "$num * $mult = $res";
+                            echo "</td></tr>";
+                        }
+                        echo "</table>";
+                        
                     ?>
+
+                    <br>
+                    <p>• <a href="javascript: history.go(-1)">Voltar</a></p>
                 </div>
             </main>
 
