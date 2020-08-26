@@ -14,18 +14,18 @@
         <div class="container-fluid d-flex h-100 flex-column">
 
             <nav class="row navbar navbar-dark bg-dark">
-                <a class="navbar-brand font-weight-bold" href="#">Projeto PW2</a>
+                <a class="navbar-brand font-weight-bold" href="../index.php">Projeto PW2</a>
             </nav>
 
-            <main class="row flex-grow-1">
+            <main class="row h-100 overflow-auto flex-grow-1">
 
                 <div class="col bg-light">
                     <h1>Introdução ao PHP</h1>
                     <h2>Data: 2020.08.18</h2>
-                    <br/>
+                    <hr>
                     <p>Hoje vimos um pouco sobre o uso do XAMPP, PHP e Bootstrap.</p>
                     <p>Também relembramos os conceitos de Client-side e Server-side.</p>
-                    <p>• <a href="javascript: history.go(-1)">Voltar</a></p>
+                    <p class="linkForte">• <a href="javascript: history.go(-1)">Voltar</a></p>
                 </div>
 
                 <div class="col bg-2">

@@ -9,6 +9,10 @@ html, body{
     height: 100%;
   }
 
+.linkForte{
+    font-weight: bold;
+}
+
 /*.containerGrid{
     display: grid;
     grid-template-columns: 3fr;

@@ -14,18 +14,21 @@
         <div class="container-fluid d-flex h-100 flex-column">
 
             <nav class="row navbar navbar-dark bg-dark">
-                <a class="navbar-brand font-weight-bold" href="#">Projeto PW2</a>
+                <a class="navbar-brand font-weight-bold" href="index.php">Projeto PW2</a>
             </nav>
 
-            <main class="row flex-grow-1">
-                <div class="col bg-light">
+            <main class="row h-100 overflow-hidden flex-grow-1"> <!-- 'h-100' e 'overflow-hidden' ou 'overflow-auto' fazem com que a página fique resposiva, porém que mantenha um tamanho fixo para o layout, adicionando barras de rolagem para conteúdo que se extenda além dos limites da página. Deixando a navegação mais agradável. *-*   -->
+                <div class="col h-100 overflow-auto bg-light">
                     <h1>Olá mundo!</h1>
                     <br/>
                     <p>Sou o início de um projeto bacana para adquirir conhecimentos sobre PHP!</p>
-                    <p>• <a href="_aulas/01_aulaIntroPHP.php">Aula 01 - Introdução ao PHP</a></p>
-                    <p>• <a href="_aulas/01a_pratica.php">Aula 01a - Prática das Lógicas de Programação em PHP</a></p>
+                    <ul>
+                    <li><a href="_aulas/01_aulaIntroPHP.php">Aula 01 - Introdução ao PHP</a></li>
+                    <li><a href="_aulas/01a_pratica.php">Aula 01a - Prática das Lógicas de Programação em PHP</a></li>
+                    <li><a href="_aulas/02a_pratica.php">Aula 02a - Recaptulação da Lógica de Programação em PHP</a></li>
+                    </ul>
                 </div>
-                <div class="col bg-2">
+                <div class="col h-100 overflow-auto bg-2">
                     <?php
                     echo "<h1>Olá, sou um título feito com PHP</h1>".
                     "<br>".

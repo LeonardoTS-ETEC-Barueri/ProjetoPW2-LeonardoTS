@@ -14,10 +14,10 @@
         <div class="container-fluid d-flex h-100 flex-column">
 
             <nav class="row navbar navbar-dark bg-dark">
-                <a class="navbar-brand font-weight-bold" href="#">Projeto PW2</a>
+                <a class="navbar-brand font-weight-bold" href="../index.php">Projeto PW2</a>
             </nav>
 
-            <main class="row flex-grow-1">
+            <main class="row h-100 overflow-auto flex-grow-1">
 
                 <div class="col bg-light">
                     <h1>Prática das Lógicas de Programação em PHP</h1>
@@ -25,7 +25,7 @@
                     <hr/>
                     
                     <?php 
-                        echo "<h1>Tabuada do 10</h1>";
+                        echo "<p><strong>Tabuada do 10</strong</p>";
 
                         echo "<table>";
                         $num = 10;
@@ -40,7 +40,7 @@
                     ?>
 
                     <br>
-                    <p>• <a href="javascript: history.go(-1)">Voltar</a></p>
+                    <p class="linkForte">• <a href="javascript: history.go(-1)">Voltar</a></p>
                 </div>
             </main>
 
