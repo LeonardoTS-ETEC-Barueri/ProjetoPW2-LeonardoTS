@@ -13,6 +13,17 @@ html, body{
     font-weight: bold;
 }
 
+.opacidade{
+    opacity: 0.2;
+}
+
+.bg-img{
+    background: url('../_media/imagens/backgrounds/01-indexBG.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 /*.containerGrid{
     display: grid;
     grid-template-columns: 3fr;

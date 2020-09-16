@@ -7,15 +7,15 @@
 
         <title>Projeto Programação Web 2</title>
 
-        <link type="text/css" rel="stylesheet" href="_style/bootstrap.css"/>
-        <link type="text/css" rel="stylesheet" href="_style/estilo.css"/>
+        <link type="text/css" rel="stylesheet" href="../_style/bootstrap.css"/>
+        <link type="text/css" rel="stylesheet" href="../_style/estilo.css"/>
     </head>
     <body>
         <div class="container-fluid d-flex h-100 flex-column">
 
             <!-- Início da Barra de Navegação Responsiva -->
             <nav class="row navbar-expand-lg navbar-dark bg-dark justify-content-between">
-                <a class="navbar-brand font-weight-bold p-2" href=""><img src="_media/imagens/icons/01-indexLogo.svg" width="30" height="30" class="d-inline-block align-top mx-2" alt="Logo da página" title="HTML - CSS - JS">Programação Web 2</a>
+                <a class="navbar-brand font-weight-bold p-2" href=""><img src="../_media/imagens/icons/01-indexLogo.svg" width="30" height="30" class="d-inline-block align-top mx-2" alt="Logo da página" title="HTML - CSS - JS">Programação Web 2</a>
 
                 <button class="navbar-toggler my-auto mr-2" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -23,11 +23,11 @@
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav align-items-center">
-                        <li class="nav-item active">    <!-- Página atual -->
-                            <a class="btn btn-light py-0 m-1" href="index.php">Home</a>
-                        </li>
                         <li class="nav-item">
-                            <a class="btn btn-outline-light py-0 m-1" href="view/paginaAtividades.php">Atividades</a>
+                            <a class="btn btn-outline-light py-0 m-1" href="../index.php">Home</a>
+                        </li>
+                        <li class="nav-item active"> <!-- Página atual -->
+                            <a class="btn btn-light py-0 m-1" href="">Atividades</a>
                         </li>
                         <li class="nav-item">
                             <a class="btn btn-outline-light py-0 m-1" href="#">Projetos Didáticos</a>
@@ -35,11 +35,6 @@
                         <li class="nav-item">
                             <a class="btn btn-outline-light py-0 m-1 disabled" href="#" tabindex="-1" aria-disabled="true">Projetos Pessoais</a>
                         </li>
-                        <!--
-                        <li class="nav-item">
-                            <a class="btn btn-outline-light disabled py-0 m-1" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
-                        -->
                     </ul>
                 </div>
             </nav>
@@ -52,8 +47,8 @@
                         <div class="d-flex h-100 justify-content-center align-items-center">
                             <div class="col-6 jumbotron" style="background-color: rgba(255,255,255,0.75);">
 
-                                <h1 class="text-center lead font-weight-bold">Bem-vindo(a) ao meu repositório!</h1>
-                                <h2 class="text-center lead font-weight-normal">Selecione uma opção do menu acima para ver os conteúdos.</h2>
+                                <h1 class="text-center lead font-weight-bold">Página de Atividades</h1>
+                                <h2 class="text-center lead font-weight-normal">Aqui teremos vários cards que direcionam para as páginas das atividades.</h2>
                             
                             </div>
                         </div>
