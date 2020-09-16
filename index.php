@@ -51,6 +51,7 @@
                         <div class="card card-body">
                             <ul>
                                 <li><a href="_atividades/01_calculadora.php">(2020.08.27) - Atividade 01 - Calculadora PHP</a></li>
+                                <li><a href="_atividades/_Atv2020-09-15/index.php">(2020.09.15) - Projeto 01 - Páginas e Formulários</a></li>
                             </ul>
                         </div>
                     </div>
