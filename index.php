@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 
-        <title>Projeto Programação Web 2</title>
+        <title>Home - Programação Web 2</title>
 
         <link type="text/css" rel="stylesheet" href="_style/bootstrap.css"/>
         <link type="text/css" rel="stylesheet" href="_style/estilo.css"/>
@@ -30,7 +30,7 @@
                             <a class="btn btn-outline-light py-0 m-1" href="view/paginaAtividades.php">Atividades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-outline-light py-0 m-1" href="#">Projetos Didáticos</a>
+                            <a class="btn btn-outline-light py-0 m-1" href="view/paginaProjetos.php">Projetos Didáticos</a>
                         </li>
                         <li class="nav-item">
                             <a class="btn btn-outline-light py-0 m-1 disabled" href="#" tabindex="-1" aria-disabled="true">Projetos Pessoais</a>
@@ -45,9 +45,9 @@
             </nav>
 
             <!-- Início do conteúdo principal -->
-            <main class="row h-100 overflow-hidden flex-grow-1"> <!-- 'h-100' e 'overflow-hidden' ou 'overflow-auto' fazem com que a página fique resposiva, porém que mantenha um tamanho fixo para o layout, adicionando barras de rolagem para conteúdo que se extenda além dos limites da página. Deixando a navegação mais agradável. *-*   -->
+            <main class="row h-100 overflow-hidden flex-grow-1 bg-img" style="background-image: url('_media/imagens/backgrounds/01-indexBG.jpg');" > <!-- 'h-100' e 'overflow-hidden' ou 'overflow-auto' fazem com que a página fique resposiva, porém que mantenha um tamanho fixo para o layout, adicionando barras de rolagem para conteúdo que se extenda além dos limites da página. Deixando a navegação mais agradável. *-*   -->
 
-                    <div class="col bg-light bg-img">
+                    <div class="col"> <!-- Container do conteúdo principal -->
                     
                         <div class="d-flex h-100 justify-content-center align-items-center">
                             <div class="col-6 jumbotron" style="background-color: rgba(255,255,255,0.75);">

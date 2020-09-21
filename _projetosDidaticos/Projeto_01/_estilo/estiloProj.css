@@ -1,6 +1,6 @@
 .bg-img{
-    background: url('../imagens/main-bg.jpg');
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
+
 }

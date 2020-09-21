@@ -9,19 +9,46 @@ html, body{
     height: 100%;
   }
 
-.linkForte{
-    font-weight: bold;
+.cool-h1{
+    font-size: 18pt;
 }
 
-.opacidade{
-    opacity: 0.2;
+.cool-h2{
+    font-size: 14pt;
+}
+
+.linkForte, .linkForte:hover{
+    font-weight: bold;
+    text-decoration-line: none;
+}
+
+.cool-p{
+    text-indent: 25px;
+    text-align: justify;
 }
 
 .bg-img{
-    background: url('../_media/imagens/backgrounds/01-indexBG.jpg');
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
+}
+
+.card-image-box{
+    max-height: 200px;
+    object-fit: cover;
+    object-position: 50%;
+    background-color: rgb(35, 35, 35);
+    transition: all .5s ease-in-out;
+}
+
+.card-image-box:hover{
+    object-fit: scale-down;
+    border-color: rgb(0, 162, 255);
+}
+
+.darkbg-hover{
+    background-color: rgb(20, 20, 20);
+    color: white;
 }
 
 /*.containerGrid{
