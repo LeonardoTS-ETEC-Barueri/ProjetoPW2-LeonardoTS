@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 
-        <title>Aula 03 - Arrays em PHP</title>
+        <title>Página de Atividades Didáticas</title>
 
         <link type="text/css" rel="stylesheet" href="../_style/bootstrap.css"/>
         <link type="text/css" rel="stylesheet" href="../_style/estilo.css"/>
@@ -13,17 +13,41 @@
     <body>
         <div class="container-fluid d-flex h-100 flex-column">
 
-            <nav class="row navbar navbar-dark bg-dark">
-                <a class="navbar-brand font-weight-bold" href="../index.php">Projeto PW2</a>
+            <!-- Início da Barra de Navegação Responsiva -->
+            <nav class="row navbar-expand-lg navbar-dark bg-dark justify-content-between">
+                <a class="navbar-brand font-weight-bold p-2" href="../index.php"><img src="../_media/imagens/icons/02-atividadesLogo.svg" width="30" height="30" class="d-inline-block align-top mx-2" alt="Logo da página" title="HTML - CSS - JS">Programação Web 2</a>
+
+                <button class="navbar-toggler my-auto mr-2" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item">
+                            <a class="btn btn-outline-light py-0 m-1" href="../index.php">Home</a>
+                        </li>
+                        <li class="nav-item active"> <!-- Página atual -->
+                            <a class="btn btn-light py-0 m-1" href="../view/paginaAtividades.php">Atividades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-light py-0 m-1" href="../view/paginaProjetos.php">Projetos Didáticos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-light py-0 m-1 disabled" href="#" tabindex="-1" aria-disabled="true">Projetos Pessoais</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
 
-            <main class="row h-100 overflow-auto flex-grow-1">
+            <!-- Início do conteúdo principal -->
+            <main class="row h-100 overflow-auto flex-grow-1 bg-img" style="background-image: url('../_media/imagens/backgrounds/02-atividadesBG.jpg');" >
 
-                <div class="col bg-light">
-                    <h1>Atividade 01 - Calculadora PHP</h1>
-                    <h2>Data: 2020.08.27</h2>
+                <div class="col p-2 m-2 rounded overflow-auto" style="background-color: rgba(255, 255, 255, 0.75);"> <!-- Container do conteúdo principal -->
+
+                    <h1 class="lead font-weight-bold">Atividade 01 - Calculadora PHP</h1>
+                    <h2 class="cool-h2">Data: 2020.08.27</h2>
                     <hr/>
-                    
+                        
                     <form action="" method="POST">
                         <fieldset style="width: 30%;" class="border border-primary p-3"><legend class="font-weight-bold w-auto">Calculadora</legend>
                             <label for="tNum1">Número 1:&nbsp;</label><input type="text" id="tNum1" name="nNum1" placeholder="Digite o 1º número" required><br/>
@@ -32,8 +56,7 @@
                             <label for="tOperacao">Selecione a Operação</label>
                             <select id="tOperacao" name="nOperacao">
                                 <option value="soma" selected>Soma</option>
-                                <option value="sub">Subtração</option>
-                                <option value="div">Divisão</option>
+                                <option value="sub">Subtração</option>                                    <option value="div">Divisão</option>
                                 <option value="mult">Multiplicação</option>
                                 <option value="resto">Resto da Divisão</option>
                             </select><br/>
@@ -81,17 +104,18 @@
 
                         //Exibição
                         echo "<br/><p>O resultado $operacao é: <span class='font-weight-bolder'>$res</span></p>";
-                        
+                            
 
                     ?>
 
-                    <p class="linkForte">• <a href="../index.php">Voltar</a></p>
-                </div>
+                    <a class="linkForte" href="../view/paginaAtividades.php"><p>Clique aqui para voltar.</p></a>
+
+                </div> <!-- Fim do container do conteúdo principal -->
             </main>
 
             <footer class="row">
                 <div class="col d-flex justify-content-end bg-dark">
-                    <p class="p-2 m-0 text-white">Desenvolvido em 2020 por Leonardo T. S.</p>
+                    <p class="p-2 m-0 text-white">Desenvolvido em 2020 por Leonardo T. Sanehira.</p>
                 </div>
             </footer>
 
