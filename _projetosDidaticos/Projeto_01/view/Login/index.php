@@ -7,9 +7,9 @@
 
         <title>Projetos - Programação Web 2</title>
 
-        <link type="text/css" rel="stylesheet" href="../../../_style/bootstrap.css"/>
-        <link type="text/css" rel="stylesheet" href="../../../_style/estilo.css"/>
-        <link type="text/css" rel="stylesheet" href="../_estilo/estiloProj.css" />
+        <link type="text/css" rel="stylesheet" href="../../../../_style/bootstrap.css"/>
+        <link type="text/css" rel="stylesheet" href="../../../../_style/estilo.css"/>
+        <link type="text/css" rel="stylesheet" href="../../_estilo/estiloProj.css" />
 
     </head>
     <body>
@@ -17,7 +17,7 @@
 
             <!-- Início da Barra de Navegação Responsiva -->
             <nav class="row navbar-expand-lg navbar-dark bg-dark justify-content-between">
-                <a class="navbar-brand font-weight-bold p-2" href="../../../index.php"><img src="../../../_media/imagens/icons/03-projetosLogo.svg" width="30" height="30" class="d-inline-block align-top mx-2" alt="Logo da página" title="HTML - CSS - JS">Programação Web 2</a>
+                <a class="navbar-brand font-weight-bold p-2" href="../../../../index.php"><img src="../../../../_media/imagens/icons/03-projetosLogo.svg" width="30" height="30" class="d-inline-block align-top mx-2" alt="Logo da página" title="HTML - CSS - JS">Programação Web 2</a>
 
                 <button class="navbar-toggler my-auto mr-2" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -26,13 +26,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav align-items-center">
                         <li class="nav-item">
-                            <a class="btn btn-outline-light py-0 m-1" href="../../../index.php">Home</a>
+                            <a class="btn btn-outline-light py-0 m-1" href="../../../../index.php">Home</a>
                         </li>
                         <li class="nav-item "> 
-                            <a class="btn btn-outline-light py-0 m-1" href="../../../view/paginaAtividades.php">Atividades</a>
+                            <a class="btn btn-outline-light py-0 m-1" href="../../../../view/paginaAtividades.php">Atividades</a>
                         </li>
                         <li class="nav-item active"> <!-- Página atual -->
-                            <a class="btn btn-light py-0 m-1" href="../../../view/paginaProjetos.php">Projetos Didáticos</a>
+                            <a class="btn btn-light py-0 m-1" href="../../../../view/paginaProjetos.php">Projetos Didáticos</a>
                         </li>
                         <li class="nav-item">
                             <a class="btn btn-outline-light py-0 m-1 disabled" href="#" tabindex="-1" aria-disabled="true">Projetos Pessoais</a>
@@ -42,16 +42,18 @@
             </nav>
 
             <!-- Início do conteúdo principal -->
-            <main class="row h-100 overflow-auto flex-grow-1 bg-img" style="background-image: url('../_imagens/main-bg.jpg');"> <!-- Background do conteúdo principal -->
+            <main class="row h-100 overflow-auto flex-grow-1 bg-img" style="background-image: url('../../_imagens/main-bg.jpg');"> <!-- Background do conteúdo principal -->
 
                 <div class="col my-5"> <!-- Container principal -->
                     
                     <div class="d-flex h-100 justify-content-center align-items-center">    <!-- Container Form -->
-                        <div class="col-6 jumbotron m-0 py-2" style="background-color: rgba(255,255,255,0.8);">
+                        <div class="col-sm-6 jumbotron m-2 p-2" style="background-color: rgba(255,255,255,0.8);">
 
-                            <h1 class="display-4 text-center">Login</h1>
+                            <div class="form-row justify-content-center">
+                                <h1 class="display-4 text-center">Login</h1>
+                            </div>
 
-                            <form action="" method="POST" id="login">
+                            <form action="../../controller/validarLogin.php" method="POST" id="tLogin"> <!-- Início do Formulário -->
                                 <div class="form-row">
                                     <div class="col-lg-6 my-3 mx-auto">
                                         <input class="form-control form-control-lg" name="nUser" id="tUser" type="text" placeholder="Nome de usuário"/>
@@ -71,7 +73,7 @@
                                 </div>
                                 
                                 <div class="form-row p-0 justify-content-end">
-                                    <a class="nav-link lead  font-weight-bold" href="../index.php">Voltar</a>
+                                    <a class="nav-link lead  font-weight-bold" href="../../index.php">Voltar</a>
                                 </div>
                             </form>
                         
@@ -95,8 +97,8 @@
 
         </div>
 
-        <script src="../../.././node_modules/jquery/dist/jquery.js"></script>
-        <script src="../../.././node_modules/popper.js/dist/umd/popper.js"></script>
-        <script src="../../.././node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="../../../../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../../../../node_modules/popper.js/dist/umd/popper.js"></script>
+        <script src="../../../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
     </body>
 </html>

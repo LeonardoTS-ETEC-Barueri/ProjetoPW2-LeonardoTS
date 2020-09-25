@@ -47,14 +47,22 @@
                 <div class="col my-5"> <!-- Container principal -->
                     
                     <div class="d-flex h-100 justify-content-center align-items-center"> 
-                        <div class="col-6 jumbotron py-5" style="background-color: rgba(255,255,255,0.8);">
+                        <div class="col-sm-6 jumbotron py-5" style="background-color: rgba(255,255,255,0.8);">
 
-                            <h1 class="text-center">Olá seja bem-vindo!</h1>
-                            <h2 class="text-center font-weight-bold lead">O que deseja fazer?</h2>
+                            <div class="form-row pt-4 justify-content-center">  
+                                <h1 class="text-center">Olá seja bem-vindo!</h1>
+                            </div>
+                            <div class="form-row pt-4 justify-content-center">  
+                                <h2 class="text-center font-weight-bold lead">O que deseja fazer?</h2>
+                            </div>
 
-                            <div class="d-flex justify-content-center pt-4">
-                                <a class="btn btn-success mx-3" href="view/login.php" role="button">Login</a>
-                                <a class="btn btn-info mx-3" href="view/cadastro.php" role="button">Cadastro</a>
+                            <div class="form-row pt-4 justify-content-center">
+                                <div class="col-sm-4 my-1">
+                                <a class="btn btn-success w-100" href="view/Login/index.php" role="button">Login</a>
+                                </div>
+                                <div class="col-sm-4 my-1">
+                                <a class="btn btn-info w-100" href="view/Cadastro/index.php" role="button">Cadastro</a>
+                                </div>
                             </div>
                         
                         </div>
@@ -77,9 +85,9 @@
 
         </div>
 
-        <script src="../.././node_modules/jquery/dist/jquery.js"></script>
-        <script src="../.././node_modules/popper.js/dist/umd/popper.js"></script>
-        <script src="../.././node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="../../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../../node_modules/popper.js/dist/umd/popper.js"></script>
+        <script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
     </body>
 </html>
 
