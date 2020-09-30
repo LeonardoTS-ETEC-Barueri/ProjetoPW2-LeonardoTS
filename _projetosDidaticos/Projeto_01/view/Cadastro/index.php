@@ -53,10 +53,10 @@
                                 <h1 class="display-4 text-center">Faça seu Cadastro</h1>
                             </div>
 
-                            <form action="" method="POST" id="tLogin"> <!-- Início do Formulário -->
+                            <form action="../../controller/validarCadastro.php" method="POST" id="tCadastro"> <!-- Início do Formulário -->
                                 <div class="form-row">
                                     <div class="col-lg-8 my-2 mx-auto">
-                                        <input class="form-control form-control-lg" name="nNome" id="tNome" type="text" placeholder="Digite seu Nome"/>
+                                        <input class="form-control form-control-lg" name="nNome" id="tNome" type="text" placeholder="Digite seu Nome Completo"/>
                                     </div>
                                 </div>
                                 <div class="form-row">

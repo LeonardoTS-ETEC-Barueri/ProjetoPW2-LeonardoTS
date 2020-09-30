@@ -56,7 +56,7 @@
                             <form action="../../controller/validarLogin.php" method="POST" id="tLogin"> <!-- Início do Formulário -->
                                 <div class="form-row">
                                     <div class="col-lg-6 my-3 mx-auto">
-                                        <input class="form-control form-control-lg" name="nUser" id="tUser" type="text" placeholder="Nome de usuário"/>
+                                        <input class="form-control form-control-lg" name="nUser" id="tUser" type="text" placeholder="E-mail ou Nome de usuário"/>
                                     </div>
                                 </div>
                                 <div class="form-row">
