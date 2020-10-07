@@ -13,7 +13,6 @@
 
     echo '<p>Sucesso, usuário logado</p>';
 
-
-
+include_once '../model/conexao.php';
 
 ?>
