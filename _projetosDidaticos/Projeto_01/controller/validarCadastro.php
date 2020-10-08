@@ -6,6 +6,7 @@
     $usernameCad = $_POST['nUser'];
     $senhaCad = $_POST['nPass'];
     $senhaCheckCad = $_POST['nPassCheck'];
+    $tipoCad = "Cliente";
 
     if ( empty($nomeCad) ) {
         exit('<p>Campo Nome Completo está vazio! <br>Digite novamente!</p>');
@@ -33,6 +34,6 @@
         exit('<p>Você não digitou a mesma senha na Verificação de Senha! <br>Digite novamente!</p>');
     }
 
-    echo '<p>Sucesso, usuário cadastrado</p>';
+    include "../model/cadastrarUsuarioDB.php";
 
 ?>
