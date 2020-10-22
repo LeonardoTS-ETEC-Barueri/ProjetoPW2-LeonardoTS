@@ -1,9 +1,10 @@
 <?php
+    session_start();
 
-    $emailLogin = $_POST['nUser'];
+    $userLogin = $_POST['nUser'];
     $senhaLogin = $_POST['nPass'];
 
-    if ($emailLogin == '') {
+    if ($userLogin == '') {
         exit('<p>Campo E-mail ou Usuário está vazio! <br>Digite novamente!</p>');
     }
 
@@ -13,6 +14,7 @@
 
     echo '<p>Sucesso, usuário logado</p>';
 
-include_once '../model/conexao.php';
+include_once '../model/efetuarLoginModel.php';   // A conexão ocorrerá dentro desse arquivo.
+//include_once '../model/conexao.php';
 
 ?>

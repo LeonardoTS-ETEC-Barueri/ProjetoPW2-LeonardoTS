@@ -1,5 +1,5 @@
 <?php
-    include "conexao.php";
+    include_once "conexao.php";
 
     $sql = $conn->prepare("INSERT INTO tbl_usuario (nome, email, userName, senha, tipo, CPF)
         VALUES  (?,?,?,?,?,?)");
