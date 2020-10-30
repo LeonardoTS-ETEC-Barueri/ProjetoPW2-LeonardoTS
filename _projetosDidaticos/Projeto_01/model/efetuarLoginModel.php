@@ -18,7 +18,7 @@ $sql -> close();    // Aqui nos garantimos o fechamento das conexões.
 $conn -> close();
 
 if(empty($linha)){  // Se "linha" voltou vazia, é pq não achamos nada.
-    echo "<p>Erro: Falha no Login</p>";
+    echo "LoginInexistente";
     die();
 } else {
     $_SESSION['idUsuario'] = $linha['idUsuario'];   // A session é uma MATRIZ DE ASSOCIAÇÃO. Deve ser correspondente com os campos da tabela da base de dados.
@@ -31,18 +31,20 @@ if(empty($linha)){  // Se "linha" voltou vazia, é pq não achamos nada.
 
     switch($linha['tipo']){ // Esse switch jogará o usuário para a tela correspondente ao tipo de usuário que ele é.
         case "Administrador":
-            echo "<p>Sucesso! Logado como [Administrador]</p>";
+            echo "loginAdministrador";
             break;
         case "Funcionario":
-            echo "<p>Sucesso! Logado como [Funcionário]</p>";
+            echo "loginFuncionario";
             break;
         case "Cliente":
-            echo "<p>Sucesso! Logado como [Cliente]</p>";
+            echo "loginCliente";
             break;
         default:
-            echo "<p>Erro: Login falhou.</p>";
-            exit();
+            echo "FalhaLogin";
+            break; 
     }
+    
+    exit();
 
 }
 

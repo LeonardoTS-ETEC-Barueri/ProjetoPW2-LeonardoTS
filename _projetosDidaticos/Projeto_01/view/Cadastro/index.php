@@ -52,8 +52,9 @@
                             <div class="form-row justify-content-center">
                                 <h1 class="display-4 text-center">Faça seu Cadastro</h1>
                             </div>
-
-                            <form action="../../controller/validarCadastro.php" method="POST" id="tCadastro"> <!-- Início do Formulário -->
+                            
+                            <!-- Início do Formulário -->
+                            <form action="../../controller/validarCadastro.php" method="POST" id="tCadastro">
                                 <div class="form-row">
                                     <div class="col-lg-8 my-2 mx-auto">
                                         <input class="form-control form-control-lg" name="nNome" id="tNome" type="text" placeholder="Digite seu Nome Completo"/>
@@ -124,5 +125,7 @@
         <script src="../../../../node_modules/jquery/dist/jquery.js"></script>
         <script src="../../../../node_modules/popper.js/dist/umd/popper.js"></script>
         <script src="../../../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="../../../../node_modules/sweetalert2/dist/sweetalert2.all.js"></script>
+        <script src="../../javascript/validacoes.js"></script>
     </body>
 </html>

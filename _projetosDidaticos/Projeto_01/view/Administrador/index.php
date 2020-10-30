@@ -1,8 +1,16 @@
 <?php
-
-session_start();
-session_unset();    // Como ainda não fiz botões de deslogar nas páginas dos tipos de usuário, vou deixar que a página de Login faça o "Logout" forçado do usuário. Quando tivermos botões na página do usuário, ele deverá ser redirecionado diretamente para sua própria página ao tentar acessar a página de Login.
-
+    session_start();
+    if(!isset($_SESSION['login']) || $_SESSION['login'] != true){
+        header("Location: ../Login/");
+    }
+    switch($_SESSION['tipo']){
+        case "Cliente":
+            header("Location: ../Cliente/");
+        break;
+        case "Funcionario":
+            header("Location: ../Funcionario/");
+        break;
+    }
 ?>
 
 <!DOCTYPE html>
@@ -52,46 +60,19 @@ session_unset();    // Como ainda não fiz botões de deslogar nas páginas dos 
             <main class="row h-100 overflow-auto flex-grow-1 bg-img" style="background-image: url('../../_imagens/main-bg.jpg');"> <!-- Background do conteúdo principal -->
 
                 <div class="col my-5"> <!-- Container principal -->
-                    
-                    <div class="d-flex h-100 justify-content-center align-items-center">    <!-- Container Form -->
-                        <div class="col-sm-6 jumbotron m-2 p-2" style="background-color: rgba(255,255,255,0.8);">
 
-                            <div class="form-row justify-content-center">
-                                <h1 class="display-4 text-center">Login</h1>
+                <div class="d-flex h-100 justify-content-center align-items-center"> 
+                        <div class="col-sm-6 jumbotron py-5" style="background-color: rgba(255,255,255,0.8);">
+
+                            <div class="form-row pt-4 justify-content-center">  
+                                <h1 class="text-center lead font-weight-bold">Olá [Administrador] - Seja bem-vindo(a) <?php echo $_SESSION['nome']; ?>!</h1>
                             </div>
-
-                            <!-- Início do Formulário -->
-                            <form action="../../controller/validarLogin.php" method="POST" id="tLogin">
-                                <div class="form-row">
-                                    <div class="col-lg-6 my-3 mx-auto">
-                                        <input class="form-control form-control-lg" name="nUser" id="tUser" type="text" placeholder="E-mail ou Nome de usuário"/>
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="col-lg-6 my-3 mx-auto">
-                                        <input class="form-control form-control-lg" name="nPass" id="tPass" type="password" placeholder="Senha"/>
-                                    </div>
-                                </div>
-
-                                <div class="form-row">
-                                    <div class="col-lg-6 my-3 mx-auto">
-                                        <input class="form-control form-control-lg btn-success" name="nBtnEntrar" id="tBtnEntrar" type="submit" value="Entrar"/>
-                                        <a class="nav-link lead p-0 m-0" href="#">Esqueci minha senha</a>
-                                    </div>
-                                </div>
-                                
-                                <div class="form-row p-0 justify-content-end">
-                                    <a class="nav-link lead  font-weight-bold" href="../../index.php">Voltar</a>
-                                </div>
-                            </form>
-                        
+                            
                         </div>
-                    </div> <!-- Fim container form -->
 
                     <?php
 
                     ?>
-
                    
                 </div>
 

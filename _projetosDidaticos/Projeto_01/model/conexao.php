@@ -17,10 +17,8 @@ $sql = "SET character_set_results=utf8";
 mysqli_query($conn, $sql);
 
 if (mysqli_connect_error($conn)){
-    echo ("Erro na conexão: " . mysqli_connect_error());
+    echo ("Erro na conexão:" . mysqli_connect_error());
     exit();
-} else {
-    echo "Conectou!";
 }
 
 ?>

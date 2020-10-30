@@ -6,7 +6,7 @@
     $sql -> bind_param("ssssss", $nomeCad, $emailCad, $usernameCad, $senhaCad, $tipoCad, $cpfCad);
     $sql -> execute() or die("ErroBanco");
 
-    echo "<p>Sucesso, usuário cadastrado</p>";
+    echo "SucessoCadastro";
 
     $sql -> close();
     $conn -> close();
